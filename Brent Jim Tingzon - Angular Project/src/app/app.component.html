@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- CSS Styling -->
+    <style>
+        /* Reset margin and padding to remove default space around elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensure that html and body take up the full height of the viewport */
+        html, body {
+            height: 100%;
+            font-family: 'Monsterrat', sans-serif; /* Set a base font family for the text */
+        }
+
+        /* Style the body with a white background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Set background to white */
+        }
+
+        /* Main container styles */
+        main {
+            width: 100%; /* Full width of the viewport */
+            min-height: 100vh; /* Ensure it takes up at least the full height of the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center content inside the main element */
+            padding: 2rem; /* Add padding to prevent content from touching edges */
+            box-sizing: border-box; /* Inherit box-sizing rule from * selector */
+            position: relative; /* Allows further positioning if needed */
+        }
+
+        /* Container for the About Me information */
+        .container {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+            padding: 2rem 3rem; /* Padding inside the container */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            max-width: 500px; /* Maximum width of the container */
+            width: 100%; /* Full width up to max-width */
+            text-align: center; /* Center-align text */
+            border: 4px solid; /* Apply gradient border */
+            border-image: linear-gradient(to right, rgb(245, 142, 74), red) 1; /* Blue-to-red gradient border */
+        }
+
+        /* Heading styles */
+        .container h1 {
+            font-size: 1.5rem;
+            color: #333333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Image styling */
+        .container img {
+            width: 200px; /* Set width of image to 200px */
+            height: 200px; /* Set height of image to 200px */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image fits into the square without stretching */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Paragraph styles for information */
+        .container .info {
+            font-size: 1.2rem;
+            color: #242424;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Bold labels */
+        .container .info strong {
+            color: #b62b19;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 2rem;
+            }
+
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .container .info {
+                font-size: 1rem;
+            }
+
+            .container img {
+                width: 150px; /* Adjust image size for smaller screens */
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container that holds the About Me content -->
+    <main>
+        <div class="container">
+            <h1>My Personal Info</h1>
+            <img src="https://i.ibb.co/P1rGpt4/brent.jpg" alt="brent">
+            <p class="info"><strong>Brent Jim Tingzon</strong></p>
+            <p class="info"><strong>ID number:</strong> 2022-63123</p>
+            <p class="info"><strong>Age:</strong>20</p>
+            <p class="info"><strong>Live in:</strong> Brgy. Serrano Dulag, Leyte</p>
+            <p class="info"><strong>College:</strong> EVSU-Dulag Campus</p>
+            <p class="info"><strong>Program/Year:</strong> BSIT-3A</p>
+            <p class="info"><strong>Hobbies:</strong>Arts and Music</p>
+        </div>
+    </main>
+
+</body>
+</html>
